@@ -6,7 +6,7 @@ Shot Scraper is a python script designed to scrape data for various PGA Tour tou
 
 In addition, weeklyscrape.py is a script designed to scrape the current week's tournament. This script can be easily configured to run as a scheduled task and scrape the weekly tournament after it has concluded.
 
-## Installion
+## Installation
 As of 4/27/2017, the python scripts are compatible with versions of python 2.7.
 
 Furthermore, [pandas](http://pandas.pydata.org/) is used to download the json files. I opted to use it over the native json libraries because it worked better with larger json files. Thus, Pandas will need to be downloaded if it doesn't already exist. You can download pandas using pip: `pip install pandas`
