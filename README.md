@@ -17,5 +17,5 @@ On linux, weeklyscraper.py can be easily scheduled to run via [crontab](https://
 
 Then in the crontab file add the line:
 
-`* 18 * * 1 cd /your/path/here/ && python /your/path/here/weeklyscrape.py > log.txt 2&1`
+`0 18 * * 1 cd /your/path/here/ && python /your/path/here/weeklyscrape.py > log.txt 2&1`
 
