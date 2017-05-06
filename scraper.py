@@ -3,6 +3,7 @@ import os
 import pandas
 import logging
 import time
+import requests
 
 logging.basicConfig(level=logging.INFO, filename='downloads_log.txt', format='%(asctime)s %(message)s')
 
@@ -34,14 +35,29 @@ def save_scorecards(tournament_id, year):
             log("Successfully downloaded scorecard for player " + pid)
         except:
             log("Could not download scorecard from: " + url)
+
+def save_field(tournament_id, year):
+    url = "http://pgatour.com/data/r/" + tournament_id + "/" + year + "/field.json"
+
+    try:
+        players = pandas.read_json(url)
+        
+        with open(year + "/r" + tournament_id + "/field.json", 'w') as output:
+            output.write(players.to_json())
+            
+        log("Downloaded field for tournament " + tournament_id)
+    
+    except:
+        log("Could not download field from " + url)
     
 def save_course(tournament_id, year):
     url = "http://pgatour.com/data/r/" + tournament_id + "/" + year + "/course.json"
-    
+  
     try:
-        data = pandas.read_json(url)
+        response = requests.get(url)
+        data = json.loads(response.text)
         with open(year + "/r" + tournament_id + "/course.json", 'w') as output:
-            output.write(data.to_json())
+            json.dump(data, output)
             
         log("Successfully saved course info for tournament " + tournament_id)
     except:
@@ -71,7 +87,21 @@ def save_leaderboard(tournament_id, year):
         log("Successfully downloaded leaderboard for tournament " + tournament_id)
     except:
         log("Could not download leaderboard from: " + url)
+    
+def save_leaderboardV2(tournament_id, year):
+    url = "http://pgatour.com/data/r/" + tournament_id + "/" + year + "/leaderboard-v2.json"
+    
+    try:
+        data = pandas.read_json(url)
         
+        with open(year + "/r" + tournament_id + "/leaderboard-v2.json", 'w') as output:
+            output.write(data.to_json())
+            
+        log("Successfully downloaded leaderboard-V2 for tournament " + tournament_id)
+    except:
+        log("Could not download leaderboard-V2 from: " + url)
+    
+    
 def load_schedule(year):
     with open(year + '/schedule.json', 'r') as input:
         data = json.loads(input.read())
@@ -93,10 +123,12 @@ def scrape(tournament_id, year):
     if not os.path.exists(year + "/r" + tournament_id + "/scorecards"): os.makedirs(year + "/r" + tournament_id + "/scorecards")
     
     log("Attemping to scrape tournament: " + tournament_id + "\tYear: " + year)
-    save_leaderboard(tournament_id, year)
-    save_course(tournament_id, year)
-    save_teetimes(tournament_id, year)
-    save_scorecards(tournament_id, year)    
+    #save_field(tournament_id, year)
+    #save_leaderboard(tournament_id, year)
+    save_leaderboardV2(tournament_id, year)
+    #save_course(tournament_id, year)
+    #save_teetimes(tournament_id, year)
+    #save_scorecards(tournament_id, year)    
         
 if __name__ in "__main__":
     #This program only works for years 2016 & 2017 as of 4/26/2017. 
@@ -123,5 +155,4 @@ if __name__ in "__main__":
             tournament_id = tournament["permNum"]
             
             scrape(tournament_id, year)
-
 
