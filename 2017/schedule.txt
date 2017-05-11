@@ -1,0 +1,51 @@
+464,Safeway Open,2016-10-13,2016-10-16
+494,CIMB Classic,2016-10-20,2016-10-23
+054,Sanderson Farms Championship,2016-10-27,2016-10-30
+489,World Golf Championships-HSBC Champions,2016-10-27,2016-10-30
+047,Shriners Hospitals for Children Open,2016-11-03,2016-11-06
+457,OHL Classic at Mayakoba,2016-11-10,2016-11-13
+493,The RSM Classic,2016-11-17,2016-11-20
+169,World Cup of Golf,2016-11-24,2016-11-27
+478,Hero World Challenge,2016-12-01,2016-12-04
+058,Franklin Templeton Shootout,2016-12-08,2016-12-10
+016,Tournament of Champions,2017-01-05,2017-01-08
+006,Sony Open in Hawaii,2017-01-12,2017-01-15
+002,CareerBuilder Challenge,2017-01-19,2017-01-22
+004,Farmers Insurance Open,2017-01-26,2017-01-29
+003,Waste Management Phoenix Open,2017-02-02,2017-02-05
+005,AT&T Pebble Beach Pro-Am,2017-02-09,2017-02-12
+007,Genesis Open,2017-02-16,2017-02-19
+010,The Honda Classic,2017-02-23,2017-02-26
+473,World Golf Championships-Mexico Championship,2017-03-02,2017-03-05
+475,Valspar Championship,2017-03-09,2017-03-12
+009,Arnold Palmer Invitational presented by Mastercard,2017-03-16,2017-03-19
+483,Puerto Rico Open,2017-03-23,2017-03-26
+470,World Golf Championships-Dell Match Play,2017-03-22,2017-03-26
+020,Shell Houston Open,2017-03-30,2017-04-02
+014,Masters Tournament,2017-04-06,2017-04-09
+012,RBC Heritage,2017-04-13,2017-04-16
+041,Valero Texas Open,2017-04-20,2017-04-23
+018,Zurich Classic of New Orleans,2017-04-27,2017-04-30
+480,Wells Fargo Championship,2017-05-04,2017-05-07
+011,THE PLAYERS Championship,2017-05-11,2017-05-14
+019,AT&T Byron Nelson,2017-05-18,2017-05-21
+021,DEAN & DELUCA Invitational,2017-05-25,2017-05-28
+023,the Memorial Tournament presented by Nationwide,2017-06-01,2017-06-04
+025,FedEx St. Jude Classic,2017-06-08,2017-06-11
+026,U.S. Open,2017-06-15,2017-06-18
+034,Travelers Championship,2017-06-22,2017-06-25
+471,Quicken Loans National,2017-06-29,2017-07-02
+490,The Greenbrier Classic,2017-07-06,2017-07-09
+030,John Deere Classic,2017-07-13,2017-07-16
+518,Barbasol Championship,2017-07-20,2017-07-23
+100,The Open Championship,2017-07-20,2017-07-23
+032,RBC Canadian Open,2017-07-27,2017-07-30
+472,Barracuda Championship,2017-08-03,2017-08-06
+476,World Golf Championships-Bridgestone Invitational,2017-08-03,2017-08-06
+033,PGA Championship,2017-08-10,2017-08-13
+013,Wyndham Championship,2017-08-17,2017-08-20
+027,THE NORTHERN TRUST,2017-08-24,2017-08-27
+505,Deutsche Bank Championship,2017-09-01,2017-09-04
+028,BMW Championship,2017-09-14,2017-09-17
+060,TOUR Championship,2017-09-21,2017-09-24
+500,The Presidents Cup,2017-09-28,2017-10-01
